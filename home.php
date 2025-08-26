@@ -1,5 +1,12 @@
 <?php
-include ('includes/header.php')
+session_start();
+
+if (!isset($_SESSION['email']) || $_SESSION['role'] !== 'user') {
+    header("Location: index.php");
+    exit;
+}
+
+include("includes/header.php");
 ?>
 
 
@@ -476,13 +483,7 @@ include ('includes/header.php')
         </div>
     </section>
     <!--::subscribe_area part end::-->
-
-
-
-
-
-
-
+    
 <?php
-include ('includes/footer.php')
+include("includes/footer.php");
 ?>
