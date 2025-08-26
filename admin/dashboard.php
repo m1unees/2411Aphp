@@ -12,8 +12,7 @@ if (!isset($_SESSION['email']) || $_SESSION['role'] !== 'admin') {
 
 <!DOCTYPE html>
 <html lang="en">
-
-
+  
 <!-- index.html  21 Nov 2019 03:44:50 GMT -->
 <head>
   <meta charset="UTF-8">
@@ -31,6 +30,8 @@ if (!isset($_SESSION['email']) || $_SESSION['role'] !== 'admin') {
 
 <body>
 
+
+
 <?php
 include('includes1/navbar.php');
 
@@ -45,7 +46,9 @@ include('includes1/sidebar.php');
 <div id="app">
     <div class="main-wrapper main-wrapper-1">
 <div class="main-content">
-  <h1>HELLO ADMIN</h1>
+  <h1>Welcome Admin: </h1>
+
+   
         <section class="section">
           <div class="row ">
             <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 col-xs-12">
@@ -765,11 +768,12 @@ include('includes1/sidebar.php');
 
 
 
-
+        
 <?php
 include('includes1/footer.php')
 ?>
 
+  
 
 <!-- General JS Scripts -->
   <script src="assets/js/app.min.js"></script>
