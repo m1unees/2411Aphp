@@ -28,11 +28,11 @@
               </ul>
             </li>
             <li class="dropdown">
-              <a href="#" class="menu-toggle nav-link has-dropdown"><i data-feather="mail"></i><span>Email</span></a>
+              <a href="#" class="menu-toggle nav-link has-dropdown"><i data-feather="mail"></i><span>usercontact</span></a>
               <ul class="dropdown-menu">
-                <li><a class="nav-link" href="email-inbox.html">Inbox</a></li>
-                <li><a class="nav-link" href="email-compose.html">Compose</a></li>
-                <li><a class="nav-link" href="email-read.html">read</a></li>
+                <li><a class="nav-link" href="admin_Contact.php">contactlist</a></li>
+
+                
               </ul>
             </li>
             <li class="menu-header">UI Elements</li>

@@ -1,10 +1,11 @@
 <?php
-include ('includes/header.php')
+include ('includes/header.php');
 ?>
 
 <?php
 
 include('./includes/db.php');
+
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $uname = $_POST['user_name'];
     $uemail = $_POST['user_email'];
@@ -14,14 +15,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
               VALUES ('$uname', '$uemail', '$umessage')";
 
     if ($conn->query($users) === true) {
-        echo "contact record saved successfully";
+        echo "<script>alert('Contact record saved successfully');</script>";
     } else {
-        echo "ERROR: " . $users . "<br>" . $conn->error;
+        echo "<script>alert('Error: " . addslashes($conn->error) . "');</script>";
     }
 
     $conn->close();
 }
 ?>
+
 
 
 
@@ -165,4 +167,3 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <?php
 include ('includes/footer.php')
 ?>
-_process
