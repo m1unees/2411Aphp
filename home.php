@@ -11,135 +11,186 @@ include("includes/header.php");
 
 
 
+
+
 <!-- banner part start-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Banner Slider</title>
+
+  <!-- Owl Carousel CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+  <!-- Bootstrap CSS (for layout classes like row, col) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    .banner_part {
+      background: #f5f5f5;
+      padding: 50px 0;
+    }
+    .banner_text_iner h1 {
+      font-size: 40px;
+      font-weight: bold;
+    }
+    .banner_text_iner p {
+      margin: 20px 0;
+    }
+    .btn_2 {
+      display: inline-block;
+      padding: 10px 25px;
+      background: #ff5a5f;
+      color: #fff;
+      border-radius: 5px;
+      text-decoration: none;
+    }
+    
+
+.banner_img {
+  overflow: hidden;
+}
+   
+.banner_img img {
+  width: 100%;       /* fill only the column */
+  height: auto;      /* keep proportions */
+  object-fit: contain;
+  display: block;
+   margin-left: -5%;  /* shift image left */
+}
+
+
+
+  </style>
+</head>
+<body>
+
 <section class="banner_part">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-12">
-                    <div class="banner_slider owl-carousel">
-                        <div class="single_banner_slider">
-                            <div class="row">
-                                <div class="col-lg-5 col-md-8">
-                                    <div class="banner_text">
-                                        <div class="banner_text_iner">
-                                            <h1>Wood & Cloth
-                                                Sofa</h1>
-                                            <p>Incididunt ut labore et dolore magna aliqua quis ipsum
-                                                suspendisse ultrices gravida. Risus commodo viverra</p>
-                                            <a href="#" class="btn_2">buy now</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="banner_img d-none d-lg-block">
-                                    <img src="img/banner_img.png" alt="">
-                                </div>
-                            </div>
-                        </div><div class="single_banner_slider">
-                            <div class="row">
-                                <div class="col-lg-5 col-md-8">
-                                    <div class="banner_text">
-                                        <div class="banner_text_iner">
-                                            <h1>Cloth & Wood
-                                                Sofa</h1>
-                                            <p>Incididunt ut labore et dolore magna aliqua quis ipsum
-                                                suspendisse ultrices gravida. Risus commodo viverra</p>
-                                            <a href="#" class="btn_2">buy now</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="banner_img d-none d-lg-block">
-                                    <img src="img/banner_img.png" alt="">
-                                </div>
-                            </div>
-                        </div><div class="single_banner_slider">
-                            <div class="row">
-                                <div class="col-lg-5 col-md-8">
-                                    <div class="banner_text">
-                                        <div class="banner_text_iner">
-                                            <h1>Wood & Cloth
-                                                Sofa</h1>
-                                            <p>Incididunt ut labore et dolore magna aliqua quis ipsum
-                                                suspendisse ultrices gravida. Risus commodo viverra</p>
-                                            <a href="#" class="btn_2">buy now</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="banner_img d-none d-lg-block">
-                                    <img src="img/banner_img.png" alt="">
-                                </div>
-                            </div>
-                        </div>
-                        <!-- <div class="single_banner_slider">
-                            <div class="row">
-                                <div class="col-lg-5 col-md-8">
-                                    <div class="banner_text">
-                                        <div class="banner_text_iner">
-                                            <h1>Cloth $ Wood Sofa</h1>
-                                            <p>Incididunt ut labore et dolore magna aliqua quis ipsum
-                                                suspendisse ultrices gravida. Risus commodo viverra</p>
-                                            <a href="#" class="btn_2">buy now</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="banner_img d-none d-lg-block">
-                                    <img src="img/banner_img.png" alt="">
-                                </div>
-                            </div>
-                        </div> -->
-                    </div>
-                    <div class="slider-counter"></div>
-                </div>
-            </div>
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-12">
+        <div class="banner_slider owl-carousel">
+          
+          <!-- Slide 1 -->
+          <div class="single_banner_slider">
+  <div class="row align-items-center">
+    <!-- Text column -->
+    <div class="col-lg-5 col-md-8">
+      <div class="banner_text">
+        <div class="banner_text_iner">
+          <h1>Wood & Cloth Sofa</h1>
+          <p>Incididunt ut labore et dolore magna aliqua quis ipsum
+            suspendisse ultrices gravida. Risus commodo viverra</p>
+          <a href="#" class="btn_2">Buy Now</a>
         </div>
-    </section>
-    <!-- banner part start-->
+      </div>
+    </div>
+
+    <!-- Image column -->
+    <div class="col-lg-7 d-none d-lg-block">
+      <div class="banner_img">
+        <img src="img/banner/banner-bg.jpg" alt="">
+      </div>
+    </div>
+  </div>
+</div>
+
+
+          <div class="single_banner_slider">
+  <div class="row align-items-center">
+    <!-- Text Column -->
+    <div class="col-lg-5 col-md-8">
+      <div class="banner_text">
+        <div class="banner_text_iner">
+          <h1>Wood & Cloth Sofa</h1>
+          <p>Incididunt ut labore et dolore magna aliqua quis ipsum
+            suspendisse ultrices gravida. Risus commodo viverra</p>
+          <a href="#" class="btn_2">Buy Now</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Image Column -->
+    <div class="col-lg-7 d-none d-lg-block">
+      <div class="banner_img">
+        <img src="img/banner/banner-bg.jpg" alt="">
+      </div>
+    </div>
+  </div>
+</div>
+
+        </div> <!-- owl-carousel -->
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<!-- Owl Carousel JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+<script>
+  $(document).ready(function(){
+    $(".banner_slider").owlCarousel({
+      items: 1,
+      loop: true,
+      autoplay: true,
+      autoplayTimeout: 3000,
+      nav: true,
+      dots: true,
+      navText: ["<", ">"]
+    });
+  });
+</script>
+
+</body>
+</html>
+
+    <!-- banner part end-->
 
     <!-- feature_part start-->
-    <section class="feature_part padding_top">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-8">
-                    <div class="section_tittle text-center">
-                        <h2>Featured Category</h2>
-                    </div>
-                </div>
-            </div>
-            <div class="row align-items-center justify-content-between">
-                <div class="col-lg-7 col-sm-6">
-                    <div class="single_feature_post_text">
-                        <p>Premium Quality</p>
-                        <h3>Latest foam Sofa</h3>
-                        <a href="#" class="feature_btn">EXPLORE NOW <i class="fas fa-play"></i></a>
-                        <img src="img/feature/feature_1.png" alt="">
-                    </div>
-                </div>
-                <div class="col-lg-5 col-sm-6">
-                    <div class="single_feature_post_text">
-                        <p>Premium Quality</p>
-                        <h3>Latest foam Sofa</h3>
-                        <a href="#" class="feature_btn">EXPLORE NOW <i class="fas fa-play"></i></a>
-                        <img src="img/feature/feature_2.png" alt="">
-                    </div>
-                </div>
-                <div class="col-lg-5 col-sm-6">
-                    <div class="single_feature_post_text">
-                        <p>Premium Quality</p>
-                        <h3>Latest foam Sofa</h3>
-                        <a href="#" class="feature_btn">EXPLORE NOW <i class="fas fa-play"></i></a>
-                        <img src="img/feature/feature_3.png" alt="">
-                    </div>
-                </div>
-                <div class="col-lg-7 col-sm-6">
-                    <div class="single_feature_post_text">
-                        <p>Premium Quality</p>
-                        <h3>Latest foam Sofa</h3>
-                        <a href="#" class="feature_btn">EXPLORE NOW <i class="fas fa-play"></i></a>
-                        <img src="img/feature/feature_4.png" alt="">
-                    </div>
+<section class="feature_part padding_top">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="section_tittle text-center">
+                    <h2>Featured Category</h2>
                 </div>
             </div>
         </div>
-    </section>
+        <div class="row align-items-center justify-content-between">
+            <?php
+            include __DIR__ . '/includes/db.php'; // adjust path if needed
+
+            $sql = "SELECT * FROM featured_categories";
+            $result = $conn->query($sql);
+
+            while($row = $result->fetch_assoc()) {
+            ?>
+                <div class="col-lg-6 col-sm-6">
+                    <div class="single_feature_post_text">
+                        <p><?php echo $row['subtitle']; ?></p>
+                        <h3><?php echo $row['title']; ?></h3>
+                        <a href="<?php echo $row['link']; ?>" class="feature_btn">
+                            EXPLORE NOW <i class="fas fa-play"></i>
+                        </a>
+                        <img src="<?php echo $row['image']; ?>" alt="">
+                    </div>
+                </div>
+            <?php } ?>
+        </div>
+    </div>
+</section>
+<!-- feature_part end-->
+
     <!-- upcoming_event part start-->
 
     <!-- product_list start-->

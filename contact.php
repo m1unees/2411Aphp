@@ -87,10 +87,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             });
           }
         </script>
-        <script
-          src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDpfS1oRGreGSBU5HHjMmQ3o5NLw7VdJ6I&callback=initMap">
-        </script>
-
+       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3619.9024867479548!2d67.02166607442994!3d24.867179844990453!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33e6b1566c46f%3A0x65318f4eb62c7aa8!2sAptech%20Computer%20Education%20Garden%20Center!5e0!3m2!1sen!2s!4v1756653606516!5m2!1sen!2s" width="1100" height="900"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
 
 
