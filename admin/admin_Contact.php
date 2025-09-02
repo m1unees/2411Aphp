@@ -31,6 +31,8 @@
             <th>user_name</th>
             <th>user_email</th>
             <th>user_message</th>
+            <th>action</th>
+            <th>action</th>
         </tr>
         <?php
         include(__DIR__ . '/../includes/db.php');
@@ -45,11 +47,13 @@
                         <td>".$row['user_name']."</td>
                         <td>".$row['user_email']."</td>
                         <td>".$row['user_message']."</td>
+                   
+                     <td><a href='update.php?id=" . $row['id'] . "'>Update</a> </td> 
+                    <td><a href='delete.php?id=" . $row['id'] . "' onclick=\"return confirm('Are you sure you want to delete this record?');\">Delete</a>
+                  </td>
                       </tr>";
             }
-        } else {
-            echo "<tr><td colspan='4'>No records found</td></tr>";
-        }
+        } 
         ?>
     </table>
 </body>
